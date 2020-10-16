@@ -11,10 +11,35 @@ body {
 	color : white;
 			
 }
-.sec {
+.sec { // question
 	width: 100vw;
 	height : 100vh;
 }
 html {
   scroll-behavior: smooth;
 }
+
+a{
+	text-decoration: none;
+}
+.sec > .quest{
+	border-radius: 20px;
+	text-align: center;
+	width: 400px;
+	padding: 15px 15px;
+	margin: auto auto;
+	background-color: white;
+	color: black;
+}
+.sec > div:not(.quest){
+	width: 400px;
+	margin: auto auto;
+}
+.sec > div > div{
+	padding: 10px 10px;
+	display: inline-block;
+	width: 190px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+}
+

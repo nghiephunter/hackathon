@@ -50,12 +50,19 @@ data.forEach(item => {
     div.id = item.quest
     const quest = document.createElement('div')
     quest.innerHTML = item.quest
+    quest.classList.add('quest')
     div.appendChild(quest)
+    const answers = document.createElement('div')
+
     item.ans.forEach(item => {
+        const answer = document.createElement('div')
+        answer.classList.add('answer')
         const link = document.createElement('a')
         link.href = `#${item.to}`
         link.innerHTML = item.text
-        div.appendChild(link)
+        answer.appendChild(link)
+        answers.appendChild(answer)
     })
+    div.appendChild(answers)
     container.appendChild(div)
 })
