@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Hackathon</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
 </head>
+
 <body>
-<header>
-</header>
-<div class="questions">
-	<p id="question">sdhgsgdfsdhf</p>
-</div>
-<div class="answer">
-	<button>1</button>
-	<button>2</button>
-	<button>3</button>
-	<button>4</button>
-	<button>5</button>
-	<button>6</button>
-</div>
+	<header>
+	</header>
+	<div id="fullpage">
+		<div class="section">
+			<h1>avasvd</h1>
+			
+			<button onclick="moveUp()">anvdvc</button>
+			<button onclick="moveUp()">anvdvc</button>
+			<button onclick="moveUp()">anvdvc</button>
+			<button onclick="moveUp()">anvdvc</button>
+		</div>
+		<div class="section">
+			<h1>avasvd</h1>
+			
+			<button onclick="moveUp()">anvdvc</button>
+			<button onclick="moveUp()">anvdvc</button>
+			<button onclick="moveUp()">anvdvc</button>
+			<button onclick="moveUp()">anvdvc</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="fullpage.js"></script>
+	<script type="text/javascript">
+		const myFullpage = new fullpage('#fullpage', {
+			anchors: ['firstPage', 'secondPage'],
+			continuousVertical: true,
+		});
+		const moveUp = () => {
+			fullpage_api.moveSectionUp();
+		}
+	</script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
-<script type="text/javascript" src="script.js"></script>
+
+
 </html>
