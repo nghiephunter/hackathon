@@ -11,7 +11,7 @@ body {
 	color : white;
 			
 }
-.sec {
+.sec { 
 	width: 100vw;
 	height : 100vh;
 }
@@ -25,3 +25,31 @@ body {
 	0%   {transform: scale(.1);}
 	100% {transform: scale(1.0);}
   }
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+}
+.sec > .quest{
+	border-radius: 20px;
+	text-align: center;
+	width: 400px;
+	padding: 15px 15px;
+	margin: auto auto;
+	background-color: white;
+	color: black;
+}
+.sec > div:not(.quest){
+	width: 400px;
+	margin: auto auto;
+}
+.sec > div > div{
+	padding: 10px 10px;
+	display: inline-block;
+	width: 190px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+}
+
