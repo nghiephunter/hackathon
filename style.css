@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url("background.png") ;
+	background-size: cover;
+    background-attachment: fixed;
+}
+#question{
+	color: white;
+	text-align: center;
+}
+.answer{
+	height: 500px;
+	width: 600px;
+	margin: auto auto;
+	flex-wrap: wrap;
+}
+.answer > button{
+	display: inline-block;
+    width: 190px;
+}
