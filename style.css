@@ -11,17 +11,7 @@ body {
 	color : white;
 			
 }
-/* #question{
-	color: white;
-	text-align: center;
+.sec {
+	width: 100vw;
+	height : 100vh;
 }
-.answer{
-	height: 500px;
-	width: 600px;
-	margin: auto auto;
-	flex-wrap: wrap;
-}
-.answer > button{
-	display: inline-block;
-    width: 190px;
-} */
