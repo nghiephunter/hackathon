@@ -218,7 +218,7 @@ const data = [
     quest: "Java",
     ans: [
       {
-        text:`<div class="ended">Java</div>sdgdgdgd`,
+        text:`<div class="ended">Java <br> abc</div>`, // them span de de style
         
       },
       
@@ -227,7 +227,7 @@ const data = [
     quest: "Javascript",
     ans: [
       {
-        text:`<div class="ended">Javascript</div> dhfdgfdfgdfgdfgd`,
+        text:`<div class="ended">Javascript <br>abc</div>`,
         
       },
       
@@ -236,7 +236,7 @@ const data = [
     quest: "Python",
     ans: [
       {
-        text:`<div class="ended">Python</div> dhfdgfdfgdfgdfgd`,
+        text:`<div class="ended">Python<br> abc</div>`,
         
       },
       
@@ -245,7 +245,7 @@ const data = [
     quest: "Php",
     ans: [
       {
-        text:`<div class="ended">Php</div> dhfdgfdfgdfgdfgd`,
+        text:`<div class="ended">Php</div>`,
         
       },
       
@@ -254,7 +254,7 @@ const data = [
     quest: "Objective-C",
     ans: [
       {
-        text:`<div class="ended">Objective-C</div> dhfdgfdfgdfgdfgd`,
+        text:`<div class="ended">Objective-C</div>`,
         
       },
       
@@ -263,7 +263,7 @@ const data = [
     quest: "Ruby",
     ans: [
       {
-        text:`<div class="ended">Ruby</div> dhfdgfdfgdfgdfgd`,
+        text:`<div class="ended">Ruby</div>`,
         
       },
       
