@@ -219,16 +219,15 @@ const data = [
 ];
 const container = document.getElementById("container")
 data.forEach(item => {
-  
   const div = document.createElement('div')
   div.classList.add('sec')
   div.id = item.quest
+  const wrapper = document.createElement('div')
   const quest = document.createElement('div')
   quest.innerHTML = item.quest
   quest.classList.add('quest')
-  div.appendChild(quest)
+  wrapper.appendChild(quest)
   const answers = document.createElement('div')
-
   item.ans.forEach(item => {
       const answer = document.createElement('div')
       answer.classList.add('answer')
@@ -238,6 +237,7 @@ data.forEach(item => {
       answer.appendChild(link)
       answers.appendChild(answer)
   })
-  div.appendChild(answers)
+  wrapper.appendChild(answers)
+  div.appendChild(wrapper)
   container.appendChild(div)
 })
