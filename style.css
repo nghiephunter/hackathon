@@ -3,13 +3,14 @@
 	padding: 0;
 	box-sizing: border-box;
 	cursor: url('./rocket_24.png'), auto;
+	font-family: 'Chilanka', cursive;
+	color: white;
+
 }
 body {
 	background-image: url("background.png") ;
 	background-size: cover;
-	background-attachment: fixed;
-	color : white;
-			
+	background-attachment: fixed;	
 }
 .wrapper {
 	height: 20vh;
@@ -105,15 +106,36 @@ a{
 	width: 400px;
 	margin: auto auto;
 	display: flex;
-	background-color: yellow;
 }
 .sec > div > div{
 	justify-content: space-between;
-	padding: 10px 10px;
 	display: inline-block;
 	width: 200px;
 	text-align: center;
-	border: 1px solid #ebebeb;
+}
+.answer{
+	border: none;
+	margin-top: 25px;
+}
+.answer:not(:last-child){
+	margin-right: 15px;|
+}
+.answer:nth-child(4n+1){
+	background-image: linear-gradient(#DC2862, #2A41D2);
+}
+.answer:nth-child(4n+2){
+	background-image: linear-gradient(#6501AA, #FD37C8);
+}
+.answer:nth-child(4n+3){
+	background-image: linear-gradient(#00F7DB, #00D944);
+}
+.answer:nth-child(4n+4){
+	background-image: linear-gradient(#03C8A1, #2235F1);
+}
+.answer > a {
+	display: block;
+	width: 100%;
+	padding: 2px;
 }
 
 
