@@ -1,10 +1,11 @@
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'VT323', monospace;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #666;
 	width: 100% !important;
 	height: 100% !important;
+	font-size: 1.08em;
 }
 h1 {
 	font-weight: 700;

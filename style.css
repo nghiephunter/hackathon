@@ -2,10 +2,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Chilanka', cursive;
+	font-family: 'VT323', monospace;
 	color: white;
 	cursor: url('rocket_24.png'), auto;
-	font-size: 1em;
+	font-size: 1.05em;
 
 }
 
