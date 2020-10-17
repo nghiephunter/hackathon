@@ -15,16 +15,8 @@ body {
 	width: 100vw;
 	height : 100vh;
 }
-.quadrado {
-	width: 200px;
-	height: 200px;
-	animation: crescendo 10s alternate infinite ease-in;
-  }
-  
-  @keyframes crescendo {
-	0%   {transform: scale(.1);}
-	100% {transform: scale(1.0);}
-  }
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -52,4 +44,5 @@ a{
 	text-align: center;
 	border: 1px solid #ebebeb;
 }
+
 
