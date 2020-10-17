@@ -220,7 +220,7 @@ const data = [
     quest: "Java",
     ans: [
       {
-        text: `<div class="ended">Java <br> <span>Lap trinh ung dung android, lap trinh nhung,lap trinh trong thuong mai dien tu(cac ngan hang dau tu lon, cac giao dich tai chinh,..)</span></div>`, // them span de de style
+        text: `<div class="ended">Java <br> <span>Lập trình ứng dụng android, lập trình nhúng,lập trình trong thương mại điệnn tử(các ngân hàng đầu tư lớn, các giao dịch tài chính,..)</span> <br><a href="#">abc</a></div>`, // them span de de style
       },
     ],
   },
@@ -228,7 +228,7 @@ const data = [
     quest: "Javascript",
     ans: [
       {
-        text: `<div class="ended">Javascript <br> <span>Lap trinh website, cac ung dung cho web,..</span></div>`,
+        text: `<div class="ended">Javascript <br> <span>Lập trình website, các ứng dụng cho web,..</span> <br><a href="#">abc</a></div>`,
       },
     ],
   },
@@ -236,7 +236,7 @@ const data = [
     quest: "Python",
     ans: [
       {
-        text: `<div class="ended">Python <br> <span>Lap trin hung dung khoa hoc, vat ly, vi sinh ; phat trien game ; lap trinh web ; machine learning/AI</span></div>`,
+        text: `<div class="ended">Python <br> <span>Lập trình ứng dụng khoa học, vật lý, vi sinh ; phát triển game ; lập trình web ; machine learning/AI</span> <br><a href="#">abc</a></div>`,
       },
     ],
   },
@@ -244,7 +244,7 @@ const data = [
     quest: "Php",
     ans: [
       {
-        text: `<div class="ended">Php  <br> <span>Lap trinh web, viet tung dung</span></div>`,
+        text: `<div class="ended">Php  <br> <span>Lập trình web, viết từng dụng</span> <br><a href="#">abc</a></div>`,
       },
     ],
   },
@@ -252,7 +252,7 @@ const data = [
     quest: "Objective-C",
     ans: [
       {
-        text: `<div class="ended">Objective-C  <br> <span>Lap trinh viet cac ung dung ch MacOS,iOS</span></div>`,
+        text: `<div class="ended">Objective-C  <br> <span>Lập trình viết các ứng dụng cho MacOS,IOS</span> <br><a href="#">abc</a></div> `,
       },
     ],
   },
@@ -260,7 +260,7 @@ const data = [
     quest: "Ruby",
     ans: [
       {
-        text: `<div class="ended">Ruby  <br> <span></span></div>`,
+        text: `<div class="ended">Ruby  <br> <span>Lập trình ứng dụng, games, phát triển website</span> <br><a href="#">abc</a></div>`,
       },
     ],
   },
@@ -268,7 +268,7 @@ const data = [
     quest: "C++",
     ans: [
       {
-        text: `<div class="ended">C++  <br> <span>lap trinh games, GUI, quan tri co so du lieu…</span></div>`,
+        text: `<div class="ended">C++  <br> <span>Lập trình games, GUI, quản trị cơ sở dữ liệu…</span> <br><a href="#">abc</a></div>`,
       },
     ],
   },
@@ -276,7 +276,7 @@ const data = [
     quest: "C#",
     ans: [
       {
-        text: `<div class="ended">C# <br> <span>Phat trien unity games, lap trinh ASP .NET, lap trinh tao nen cac phan mem da nen tang</span></div> `,
+        text: `<div class="ended">C# <br> <span>Phát triển unity games, lập trình ASP .NET, lập trình tạo nên các phần mềm đa nền tảng</span> <br><a href="#">abc</a></div> `,
       },
     ],
   },
@@ -301,7 +301,7 @@ data.forEach((item) => {
     item.ans.forEach((item) => {
       const img = document.createElement("img");
       const randomId = Math.floor(Math.random() * 5);
-      img.src = `tt${randomId + 1}-removebg-preview.png`;
+      img.src = `./rock/tt${randomId + 1}-removebg-preview.png`;
       img.width = 100;
       img.height = 100;
       img.style.cursor = `url('cursor.png'), auto`;
