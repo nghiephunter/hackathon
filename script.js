@@ -194,7 +194,7 @@ const data = [
   ans: [
     {
       text: "front-end(Giao diện trang web)",
-      to: "js",
+      to: "Javascript",
     },
     {
       text: "back-end(Bộ não vận hành trang web)",
@@ -214,8 +214,80 @@ const data = [
       to:
         "Bạn có muốn thử dự án có nhiều tiềm năng nhưng con chậm phát triển ?",
     },
-  ],
-},
+  ]},{
+    quest: "Java",
+    ans: [
+      {
+        text:`<div style="width: 300px; height: 500px" >Java</div>`,
+        
+      },
+      
+    ],
+  },{
+    quest: "Javascript",
+    ans: [
+      {
+        text:`<div style="width: 300px; height: 500px" >Javascript</div>`,
+        
+      },
+      
+    ],
+  },{
+    quest: "Python",
+    ans: [
+      {
+        text:`<div style="width: 300px; height: 500px" >Python</div>`,
+        
+      },
+      
+    ],
+  },{
+    quest: "Php",
+    ans: [
+      {
+        text:`<div style="width: 300px; height: 500px" >Php</div>`,
+        
+      },
+      
+    ],
+  },{
+    quest: "Objective-C",
+    ans: [
+      {
+        text:`<div style="width: 300px; height: 500px" >Objective-C</div>`,
+        
+      },
+      
+    ],
+  },{
+    quest: "Ruby",
+    ans: [
+      {
+        text:`<div style="width: 300px; height: 500px" >Ruby</div>`,
+        
+      },
+      
+    ],
+  },{
+    quest: "C++",
+    ans: [
+      {
+        text:`<div style="" >C++</div>`,
+        
+      },
+      
+    ],
+  },{
+    quest: "C#",
+    ans: [
+      {
+        text:`<div style="width: 300px; height: 500px" >C#</div>`,
+        
+      },
+      
+    ],
+  },
+
 ];
 const container = document.getElementById("container")
 data.forEach(item => {
