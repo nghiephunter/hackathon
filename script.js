@@ -220,7 +220,7 @@ const data = [
     quest: "Java",
     ans: [
       {
-        text: `<div class="ended">Java <br> abc</div>`, // them span de de style
+        text: `<div class="ended">Java <br> <span>Lap trinh ung dung android, lap trinh nhung,lap trinh trong thuong mai dien tu(cac ngan hang dau tu lon, cac giao dich tai chinh,..)</span></div>`, // them span de de style
       },
     ],
   },
@@ -228,7 +228,7 @@ const data = [
     quest: "Javascript",
     ans: [
       {
-        text: `<div class="ended">Javascript <br>abc</div>`,
+        text: `<div class="ended">Javascript <br> <span>Lap trinh website, cac ung dung cho web,..</span></div>`,
       },
     ],
   },
@@ -236,7 +236,7 @@ const data = [
     quest: "Python",
     ans: [
       {
-        text: `<div class="ended">Python<br> abc</div>`,
+        text: `<div class="ended">Python <br> <span>Lap trin hung dung khoa hoc, vat ly, vi sinh ; phat trien game ; lap trinh web ; machine learning/AI</span></div>`,
       },
     ],
   },
@@ -244,7 +244,7 @@ const data = [
     quest: "Php",
     ans: [
       {
-        text: `<div class="ended">Php</div>`,
+        text: `<div class="ended">Php  <br> <span>Lap trinh web, viet tung dung</span></div>`,
       },
     ],
   },
@@ -252,7 +252,7 @@ const data = [
     quest: "Objective-C",
     ans: [
       {
-        text: `<div class="ended">Objective-C</div>`,
+        text: `<div class="ended">Objective-C  <br> <span>Lap trinh viet cac ung dung ch MacOS,iOS</span></div>`,
       },
     ],
   },
@@ -260,7 +260,7 @@ const data = [
     quest: "Ruby",
     ans: [
       {
-        text: `<div class="ended">Ruby</div>`,
+        text: `<div class="ended">Ruby  <br> <span></span></div>`,
       },
     ],
   },
@@ -268,7 +268,7 @@ const data = [
     quest: "C++",
     ans: [
       {
-        text: `<div class="ended">C++</div> dhfdgfdfgdfgdfgd`,
+        text: `<div class="ended">C++  <br> <span>lap trinh games, GUI, quan tri co so du lieu…</span></div>`,
       },
     ],
   },
@@ -276,7 +276,7 @@ const data = [
     quest: "C#",
     ans: [
       {
-        text: `<div class="ended">C#</div> dfdhjf`,
+        text: `<div class="ended">C# <br> <span>Phat trien unity games, lap trinh ASP .NET, lap trinh tao nen cac phan mem da nen tang</span></div> `,
       },
     ],
   },
