@@ -15,7 +15,7 @@ body {
 	width: 100vw;
 	height : 100vh;
 }
-.quadrado {
+/*.quadrado {
 	width: 200px;
 	height: 200px;
 	animation: crescendo 10s alternate infinite ease-in;
@@ -24,7 +24,7 @@ body {
   @keyframes crescendo {
 	0%   {transform: scale(.1);}
 	100% {transform: scale(1.0);}
-  }
+  }*/
 html {
   scroll-behavior: smooth;
 }
@@ -57,20 +57,5 @@ a{
 	width: 200px;
 	text-align: center;
 	border: 1px solid #ebebeb;
-}
-.container {
-	position: relative;
-}
-.rock{
-	position: absolute;
-	top : 15%;
-	left: 15%;
-}
-.none {
-	display : none;
-}
-.container{
-	background: url("red.png");
-
 }
 
