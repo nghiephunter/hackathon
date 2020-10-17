@@ -26,91 +26,10 @@ body {
 	100% {transform: scale(1.0);}
   }*/
 html {
-<<<<<<< HEAD
   scroll-behavior: smooth;
 }
 
 a{
-=======
-	scroll-behavior: smooth;
-}
-
-.background {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	height: 100vh;
-	width: 100vw;
-	z-index: -10000;
-
-}
-
-.crewmate {
-	height: 20vh;
-	animation: rotateOnly 10s infinite linear;
-}
-
-@keyframes rotateOnly {
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(359deg);
-	}
-}
-
-#container {
-	/* position: fixed; */
-	top: 0;
-	background: rgba(0, 0, 0, 0);
-	color: #f1f1f1;
-	width: 100%;
-	padding: 20px;
-}
-
-.crewmateContainer {
-	width: 30vw;
-	text-align: right;
-	animation: rotation 50s infinite linear ;
-	transform-origin: top left;
-}
-
-@keyframes run {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(100vw);
-	}
-}
-@keyframes reverseRotation {
-	from {
-		transform: rotate(360deg);
-		
-	}
-
-	to {
-		transform: rotate(0deg);
-		
-	}
-}
-
-@keyframes rotation {
-	from {
-		transform: rotate(0deg);
-		
-	}
-
-	to {
-		transform: rotate(359deg);
-		
-	}
-}
-
-a {
->>>>>>> 902241f9394140ea82d8381c07d727c0e10bafb2
 	text-decoration: none;
 	display: block;
 	width: 100%;
