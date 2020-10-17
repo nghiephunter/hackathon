@@ -1,5 +1,5 @@
 const data = [
-  {
+    {
     quest: "Tại sao bạn lựa chọn ngành công nghệ thông tin ?",
     ans: [
       {
@@ -217,23 +217,32 @@ const data = [
     ],
   },
 ];
-const container = document.getElementById("container");
-data.forEach((item) => {
-  const div = document.createElement("div");
-  div.classList.add("sec");
-  const img = document.createElement("img");
-  img.src = "./149-1497507_meteor-transparent-background-clipart.png";
-  img.classList.add("quadrado");
-  div.appendChild(img);
-  div.id = item.quest;
-  const quest = document.createElement("div");
-  quest.innerHTML = item.quest;
-  div.appendChild(quest);
-  item.ans.forEach((item) => {
-    const link = document.createElement("a");
-    link.href = `#${item.to}`;
-    link.innerHTML = item.text;
-    div.appendChild(link);
-  });
-  container.appendChild(div);
-});
+const container = document.getElementById("container")
+data.forEach(item => {
+    
+    const div = document.createElement('div')
+    div.classList.add('sec')
+    div.id = item.quest
+    const quest = document.createElement('div')
+    quest.innerHTML = item.quest
+    quest.classList.add('quest')
+    div.appendChild(quest)
+    const answers = document.createElement('div')
+
+    item.ans.forEach(item => {
+        const img = document.createElement('img')
+    img.src = "white.png"
+    img.width = "50"
+    img.height ="50"
+        const answer = document.createElement('div')
+        answer.classList.add('answer')
+        const link = document.createElement('a')
+        link.href = `#${item.to}`
+        link.innerHTML = item.text
+        answer.appendChild(link)
+        answer.appendChild(img)
+        answers.appendChild(answer)
+    })
+    div.appendChild(answers)
+    container.appendChild(div)
+})
