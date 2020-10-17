@@ -218,7 +218,7 @@ const data = [
     quest: "Java",
     ans: [
       {
-        text:`<div style="width: 300px; height: 500px" >Java</div>`,
+        text:`<div class="ended">Java</div>sdgdgdgd`,
         
       },
       
@@ -227,7 +227,7 @@ const data = [
     quest: "Javascript",
     ans: [
       {
-        text:`<div style="width: 300px; height: 500px" >Javascript</div>`,
+        text:`<div class="ended">Javascript</div> dhfdgfdfgdfgdfgd`,
         
       },
       
@@ -236,7 +236,7 @@ const data = [
     quest: "Python",
     ans: [
       {
-        text:`<div style="width: 300px; height: 500px" >Python</div>`,
+        text:`<div class="ended">Python</div> dhfdgfdfgdfgdfgd`,
         
       },
       
@@ -245,7 +245,7 @@ const data = [
     quest: "Php",
     ans: [
       {
-        text:`<div style="width: 300px; height: 500px" >Php</div>`,
+        text:`<div class="ended">Php</div> dhfdgfdfgdfgdfgd`,
         
       },
       
@@ -254,7 +254,7 @@ const data = [
     quest: "Objective-C",
     ans: [
       {
-        text:`<div style="width: 300px; height: 500px" >Objective-C</div>`,
+        text:`<div class="ended">Objective-C</div> dhfdgfdfgdfgdfgd`,
         
       },
       
@@ -263,7 +263,7 @@ const data = [
     quest: "Ruby",
     ans: [
       {
-        text:`<div style="width: 300px; height: 500px" >Ruby</div>`,
+        text:`<div class="ended">Ruby</div> dhfdgfdfgdfgdfgd`,
         
       },
       
@@ -272,7 +272,7 @@ const data = [
     quest: "C++",
     ans: [
       {
-        text:`<div style="" >C++</div>`,
+        text:`<div class="ended">C++</div> dhfdgfdfgdfgdfgd`,
         
       },
       
@@ -281,7 +281,7 @@ const data = [
     quest: "C#",
     ans: [
       {
-        text:`<div style="width: 300px; height: 500px" >C#</div>`,
+        text:`<div class="ended">C#</div> dfdhjf`,
         
       },
       
@@ -291,16 +291,19 @@ const data = [
 ];
 const container = document.getElementById("container")
 data.forEach(item => {
+  //khoi tao section 
   const div = document.createElement('div')
   div.classList.add('sec')
   div.id = item.quest
+  //khoi tao bo cau hoi cau tra loi
   const wrapper = document.createElement('div')
   const quest = document.createElement('div')
-  quest.innerHTML = item.quest
+  item.ans.length === 1 ? quest.innerHTML = item.ans[0].text : quest.innerHTML = item.quest
   quest.classList.add('quest')
   wrapper.appendChild(quest)
+  //khoi tao cau tra loi
   const answers = document.createElement('div')
-  item.ans.forEach(item => {
+  item.ans.length !== 1 && item.ans.forEach(item => {
       const answer = document.createElement('div')
       answer.classList.add('answer')
       const link = document.createElement('a')
