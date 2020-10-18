@@ -11,7 +11,7 @@ const data = [
         to: "Có 1 ý tưởng tuyệt vời trong đầu ?",
       },
       {
-        text: "Để có 1 công việc kiếm tiền $$$",
+        text: "Để kiểm được nhiều tiền $$$",
         to: "Bạn muốn làm việc trên nền tảng nào ?",
       },
       {
@@ -52,7 +52,7 @@ const data = [
     ans: [
       {
         text: "Web",
-        to: "Bạn có muốn làm web cung cấp trạng thái hiện tại(Như twitter) ?",
+        to: "Bạn có muốn làm web cung cấp thông tin thời gian thực như twitter ?",
       },
       {
         text: "Mobile",
@@ -82,7 +82,7 @@ const data = [
     ],
   },
   {
-    quest: "Bạn có muốn làm web cung cấp trạng thái hiện tại(Như twitter) ?",
+    quest: "Bạn có muốn làm web cung cấp thông tin thời gian thực như twitter ?",
     ans: [
       {
         text: "Có",
@@ -159,7 +159,7 @@ const data = [
         to: "Có 1 ý tưởng tuyệt vời trong đầu ?",
       },
       {
-        text: "Để có 1 công việc kiếm tiền $$$",
+        text: "Để kiếm được nhiều tiền $$$",
         to: "Bạn muốn làm trên nền tảng nào ?",
       },
       {
@@ -220,7 +220,7 @@ const data = [
     quest: "Java",
     ans: [
       {
-        text: `<div class="ended">Java <br> <span>Lập trình ứng dụng android, lập trình nhúng,lập trình trong thương mại điệnn tử(các ngân hàng đầu tư lớn, các giao dịch tài chính,..)</span> <br><br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`, // them span de de style
+        text: `<div class="ended">Java <br> <span>Lập trình ứng dụng android, lập trình nhúng, lập trình trong thương mại điệnn tử(các ngân hàng đầu tư lớn, các giao dịch tài chính,..)</span> <br><br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`, // them span de de style
       },
     ],
   },
