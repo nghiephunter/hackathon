@@ -1,68 +1,41 @@
-$(function() {
+let $name = document.getElementById("name");
+let $email = document.getElementById("email");
+let $message = document.getElementById("message");
 
-    $("input,textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
-            // additional error messages or events
-        },
-        submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-            // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
-            $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
-                data: {
-                    name: name,
-                    email: email,
-                    message: message
-                },
-                cache: false,
-                success: function() {
-                    // Success message
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
-                    $('#success > .alert-success')
-                        .append('</div>');
+function checkEmail() { 
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    if (!filter.test($email.value)) { 
+             alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+             $email.focus; 
+             return false; 
+    }
+    else{ 
+             return true;
+    } 
+}
 
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
-                },
-                error: function() {
-                    // Fail message
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
-                    $('#success > .alert-danger').append('</div>');
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
-                },
-            })
-        },
-        filter: function() {
-            return $(this).is(":visible");
-        },
-    });
-
-    $("a[data-toggle=\"tab\"]").click(function(e) {
-        e.preventDefault();
-        $(this).tab("show");
-    });
+function sendEmail() {
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "trung80.uet@gmail.com",
+    Password : "4D7DC4909916B95BCA7576CAFAB4E47CD715",
+    To : $email.value,
+    From : "trung80.uet@gmail.com",
+    Subject : "This is the subject",
+    Body : `<div style = "font-size:20px "> Chào mừng ${$name.value}!! 
+    Cảm ơn sự đóng góp của bạn, chúng tôi sẽ tiếp nhận và có những cải thiện tốt hơn trong tương lai.
+   </div>`
 });
+}
+
+const db = firebase.firestore();
+function mess(){
+    event.preventDefault();
+    if(checkEmail()==true){
+        db.collection("doc").add({ten: $name.value, email: $email.value, message : $message.value});
+        sendEmail();
+    }
+    setTimeout(function(){ location.reload(); }, 1200);
+}
 
 
-/*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
-    $('#success').html('');
-});
