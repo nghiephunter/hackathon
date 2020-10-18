@@ -6,7 +6,7 @@ function main() {
    
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
+          let target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
             $('html,body').animate({
@@ -26,10 +26,10 @@ $('#nav').affix({
 
 	// skills chart
 	$(document).ready(function(e) {
-	//var windowBottom = $(window).height();
-	var index=0;
+	//const windowBottom = $(window).height();
+	let index=0;
 	$(document).scroll(function(){
-		var top = $('#skills').height()-$(window).scrollTop();
+		const top = $('#skills').height()-$(window).scrollTop();
 		console.log(top)
 		if(top<-300){
 			if(index==0){	
@@ -51,7 +51,7 @@ $('#nav').affix({
 	// Hide nav on click
   $(".navbar-nav li a").click(function (event) {
     // check if window is small enough so dropdown is created
-    var toggle = $(".navbar-toggle").is(":visible");
+    const toggle = $(".navbar-toggle").is(":visible");
     if (toggle) {
       $(".navbar-collapse").collapse('hide');
     }
@@ -59,7 +59,7 @@ $('#nav').affix({
 
   	// Portfolio isotope filter
     $(window).load(function() {
-        var $container = $('.portfolio-items');
+        const $container = $('.portfolio-items');
         $container.isotope({
             filter: '.a',
             animationOptions: {
@@ -71,7 +71,7 @@ $('#nav').affix({
         $('.cat a').click(function() {
             $('.cat .active').removeClass('active');
             $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
+            const selector = $(this).attr('data-filter');
             $container.isotope({
                 filter: selector,
                 animationOptions: {
@@ -84,7 +84,32 @@ $('#nav').affix({
         });
 
     });
-	
+    $(window).load(function() {
+      const $container = $('.portfolio-items-alter');
+      $container.isotope({
+          filter: '*',
+          animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+          }
+      });
+      $('.cat-alter a').click(function() {
+          $('.cat-alter .active').removeClass('active');
+          $(this).addClass('active');
+          const selector = $(this).attr('data-filter');
+          $container.isotope({
+              filter: selector,
+              animationOptions: {
+                  duration: 750,
+                  easing: 'linear',
+                  queue: false
+              }
+          });
+          return false;
+      });
+
+  });
 	  	
     // CounterUp
 	$(document).ready(function( $ ) {
