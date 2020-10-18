@@ -220,7 +220,7 @@ const data = [
     quest: "Java",
     ans: [
       {
-        text: `<div class="ended">Java <br> <span>Lập trình ứng dụng android, lập trình nhúng,lập trình trong thương mại điệnn tử(các ngân hàng đầu tư lớn, các giao dịch tài chính,..)</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`, // them span de de style
+        text: `<div class="ended">Java <br> <span>Lập trình ứng dụng android, lập trình nhúng,lập trình trong thương mại điệnn tử(các ngân hàng đầu tư lớn, các giao dịch tài chính,..)</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`, // them span de de style
       },
     ],
   },
@@ -228,7 +228,7 @@ const data = [
     quest: "Javascript",
     ans: [
       {
-        text: `<div class="ended">Javascript <br> <span>Lập trình website, các ứng dụng cho web,..</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
+        text: `<div class="ended">Javascript <br> <span>Lập trình website, các ứng dụng cho web,..</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
       },
     ],
   },
@@ -236,7 +236,7 @@ const data = [
     quest: "Python",
     ans: [
       {
-        text: `<div class="ended">Python <br> <span>Lập trình ứng dụng khoa học, vật lý, vi sinh ; phát triển game ; lập trình web ; machine learning/AI</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
+        text: `<div class="ended">Python <br> <span>Lập trình ứng dụng khoa học, vật lý, vi sinh ; phát triển game ; lập trình web ; machine learning/AI</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
       },
     ],
   },
@@ -244,7 +244,7 @@ const data = [
     quest: "Php",
     ans: [
       {
-        text: `<div class="ended">Php  <br> <span>Lập trình web, viết từng dụng</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
+        text: `<div class="ended">Php  <br> <span>Lập trình web, viết từng dụng</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
       },
     ],
   },
@@ -252,7 +252,7 @@ const data = [
     quest: "Objective-C",
     ans: [
       {
-        text: `<div class="ended">Objective-C  <br> <span>Lập trình viết các ứng dụng cho MacOS,IOS</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div> `,
+        text: `<div class="ended">Objective-C  <br> <span>Lập trình viết các ứng dụng cho MacOS,IOS</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div> `,
       },
     ],
   },
@@ -260,7 +260,7 @@ const data = [
     quest: "Ruby",
     ans: [
       {
-        text: `<div class="ended">Ruby  <br> <span>Lập trình ứng dụng, games, phát triển website</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
+        text: `<div class="ended">Ruby  <br> <span>Lập trình ứng dụng, games, phát triển website</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
       },
     ],
   },
@@ -268,7 +268,7 @@ const data = [
     quest: "C++",
     ans: [
       {
-        text: `<div class="ended">C++  <br> <span>Lập trình games, GUI, quản trị cơ sở dữ liệu…</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
+        text: `<div class="ended">C++  <br> <span>Lập trình games, GUI, quản trị cơ sở dữ liệu…</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div>`,
       },
     ],
   },
@@ -276,7 +276,7 @@ const data = [
     quest: "C#",
     ans: [
       {
-        text: `<div class="ended">C# <br> <span>Phát triển unity games, lập trình ASP .NET, lập trình tạo nên các phần mềm đa nền tảng</span> <br><a href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div> `,
+        text: `<div class="ended">C# <br> <span>Phát triển unity games, lập trình ASP .NET, lập trình tạo nên các phần mềm đa nền tảng</span> <br><a style="color: red" href="https://nghiephunter.github.io/hackathon/#portfolio">Tìm hiểu thêm</a></div> `,
       },
     ],
   },
